@@ -10,6 +10,16 @@
 关系上：父亲、儿子、兄弟、祖父、孙子，祖先，后裔，真祖先，真后裔
 几何上(纵向)：路径(父-子)、长。深度(向下，根为0)，高度(向上，叶为0)。
 
+```java
+class TreeNode{
+     Object element;
+		TreeNode firstChild;
+		TreeNode nextSibling;             
+}
+```
+
+
+
 **实现**：TreeSet、TreeMap
 
 **应用**：
