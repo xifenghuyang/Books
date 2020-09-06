@@ -35,6 +35,15 @@ git push origin master
    ```bash
    git config --list
    ```
-
+### 3.检出必要目录
+```
+$ mkdir druid
+$ cd druid  
+$ git init // 初始化空仓库
+$ git remote add -f origin https://github.com/alibaba/druid.git // 关联远程地址 ，这一步不要终止执行，不然下面操作无效
+$ git config core.sparsecheckout true // 开启Sparse Checkout模式
+$ echo "doc" >> .git/info/sparse-checkout // 设置需Check Out的文件。直接从项目目录下开始
+$ git pull origin master // Check Out
+```
    
 
